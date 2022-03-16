@@ -130,22 +130,26 @@ body {
     align-items: center;
   }
 }
-.menu__item {
+.menu__item__link {
   text-transform: uppercase;
   font-weight: 700;
   padding: 8px;
+  text-decoration: none;
+  color: white;
 }
 @media screen and (min-width: 1030px) {
-  .menu__item {
+  .menu__item__link {
     max-width: 1440px;
     margin: 0 auto;
     font-size: 1.125rem;
     padding: 10px 32px;
   }
 }
-.menu__item:hover {
-  background-color: white;
-  color: #0898EC;
+@media screen and (min-width: 770px) {
+  .menu__item__link:hover {
+    background-color: white;
+    color: #0898EC;
+  }
 }
 .menu__hamburger {
   font-size: 2.5rem;
@@ -154,5 +158,13 @@ body {
   .menu__hamburger {
     display: none;
   }
+}
+
+.menu__mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #021424;
+  transform: translateY(60px) translateX(-250px);
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

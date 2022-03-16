@@ -34,17 +34,21 @@
     display: flex;
     align-items: center;
   }
-  &__item{
+  &__item__link{
     text-transform: uppercase;
     font-weight: 700;
     padding: 8px;
+    text-decoration: none;
+    color: white;
     @include desktop{
       font-size: 1.125rem;
       padding: 10px 32px;
     }
     &:hover{
-      background-color: white;
-      color: $main-color;
+      @include tablet {
+        background-color: white;
+        color: $main-color;
+      }
     }
   }
   &__hamburger{
@@ -53,4 +57,11 @@
       display: none;
     }
   }
+}
+.menu__mobile{
+  display: flex;
+  flex-direction: column;
+  background-color: $text-color;
+  transform: translateY(60px) translateX(-250px);
+  margin: 0;
 }
