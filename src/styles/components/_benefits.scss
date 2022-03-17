@@ -13,6 +13,9 @@
     font-weight: 700;
     color: $text-color;
     padding: 100px 0 50px 15px;
+    @include desktop {
+      padding-top: 65px;
+    }
     &__2{
       font-size: 4.5rem;
       line-height:6.125rem;
@@ -20,28 +23,92 @@
   }
 }
 .benefits{
+  @include desktop {
+    display: flex;
+  }
   &__photo{
     background-image: url("../assets/woman1.jpg");
     border: 10px solid $main-color;
     background-size: cover;
-    background-position: center;
-    max-width:465px;
+    background-position: left;
+    width:365px;
     height: 532px;
-    margin: 72px 0 0 82px;
+    margin-top: 72px;
+    @include bigdesktop {
+      width: 465px;
+      margin-top: 72px;
+    }
+    &__container{
+      display: none;
+      @include desktop{
+        display: block;
+        margin-left: 85px;
+      }
+    }
+  }
+  &__title{
+    display: none;
+    @include desktop {
+      display: inline-block;
+    }
   }
   &__numbers{
-    text-align: center;
     padding: 10px 105px;
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+  &__description{
+    text-align: center;
+    margin-right: 85px;
+  }
+  &__title{
+    display: none;
+    @include desktop {
+      display: inline-block;
+    }
   }
 }
 .number{
+  text-align: center;
   font-size: 4.5rem;
   color: $main-color;
   font-weight: 800;
+  @include desktop {
+    position: absolute;
+    top: -20px;
+    left: calc(40% - 10px);
+
+  }
   &__benefit{
+    text-align: center;
     font-size: 1.125rem;
     color: $text-color;
     margin: 10px 0 50px 0;
+    @include desktop {
+      margin: 100px 0 20px 0;
+    }
+  }
+  &__group{
+    @include desktop{
+      background-color: $secondary-color;
+      padding: 8px;
+      margin: 50px 10px 0 10px;
+      position: relative;
+    }
+    @include bigdesktop {
+      width: 227px;
+      height: 301px;
+      padding: 20px 22px;
+      margin: 0 10px;
+      &:nth-child(2){
+        height: 256px;
+        margin-top: 40px;
+      }
+
+    }
   }
 }
 .number2{
