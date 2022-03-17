@@ -1,0 +1,25 @@
+.footer{
+  background-color: $text-color;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 27px;
+  }
+  &__social{
+    display: flex;
+    color: $main-color;
+  }
+}
+.author{
+  font-size:0.825rem;
+  color: white;
+  font-weight: 400;
+}
+.iconify{
+  margin: 0 13px;
+  font-size:1.5rem;
+  &:first-of-type{
+    font-size:1.6rem;
+  }
+}

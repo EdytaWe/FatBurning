@@ -801,4 +801,32 @@ body {
     margin: 50px 0 50px 92px;
   }
 }
+
+.footer {
+  background-color: #021424;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 27px;
+}
+.footer__social {
+  display: flex;
+  color: #0898EC;
+}
+
+.author {
+  font-size: 0.825rem;
+  color: white;
+  font-weight: 400;
+}
+
+.iconify {
+  margin: 0 13px;
+  font-size: 1.5rem;
+}
+.iconify:first-of-type {
+  font-size: 1.6rem;
+}
 /*# sourceMappingURL=style.css.map */
