@@ -10,3 +10,10 @@
     @content;
   }
 }
+@mixin bigdesktop{
+  @media screen and (min-width: 1250px) {
+    max-width:1440px;
+    margin: 0 auto;
+    @content;
+  }
+}
