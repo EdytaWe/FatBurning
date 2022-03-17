@@ -53,7 +53,6 @@
     }
   }
   &__numbers{
-    padding: 10px 105px;
     @include desktop {
       display: flex;
       justify-content: space-between;
@@ -62,7 +61,9 @@
   }
   &__description{
     text-align: center;
-    margin-right: 85px;
+    @include desktop {
+      margin-right: 85px;
+    }
   }
   &__title{
     display: none;

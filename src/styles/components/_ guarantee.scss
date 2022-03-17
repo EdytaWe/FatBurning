@@ -1,0 +1,71 @@
+.guarantee {
+  background-image: url("../assets/pig.jpg");
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $text-color;
+  @include tablet{
+    background-size: contain;
+  }
+
+  @include desktop{
+    margin-top: 83px;
+  }
+  &__title{
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    @include tablet{
+      font-size: 2rem;
+    }
+    &__2{
+      text-decoration: underline;
+      line-height: 3rem;
+    }
+  }
+  &__description{
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin: 70px 15px 30px 15px;
+    max-width: 864px;
+    @include tablet{
+      margin: 50px;
+      font-size: 1.125rem;
+    }
+    @include desktop {
+      margin-left: 170px;
+      margin-top: 56px;
+    }
+  }
+  &__check{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px 0 10px;
+    @include tablet{
+      margin-left: 50px;
+      max-width: 549px;
+    }
+    @include desktop {
+      margin-left: 279px;
+      margin-top: 36px;
+    }
+    @include bigdesktop{
+      max-width: 700px;
+    }
+    &__description{
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-left: 10px;
+      @include tablet{
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+.fa-solid{
+  font-size: 2rem;
+  color: $main-color;
+  @include tablet{
+    font-size: 3rem;
+  }
+}
