@@ -1,0 +1,49 @@
+.benefits__mobile{
+  &__photo{
+    background-image: url("../assets/woman1.jpg");
+    background-position: left;
+    background-size: cover;
+    @include desktop{
+      display: none;
+    }
+  }
+  &__title{
+    font-size: 3.125rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+    color: $text-color;
+    padding: 100px 0 50px 15px;
+    &__2{
+      font-size: 4.5rem;
+      line-height:6.125rem;
+    }
+  }
+}
+.benefits{
+  &__photo{
+    background-image: url("../assets/woman1.jpg");
+    border: 10px solid $main-color;
+    background-size: cover;
+    background-position: center;
+    max-width:465px;
+    height: 532px;
+    margin: 72px 0 0 82px;
+  }
+  &__numbers{
+    text-align: center;
+    padding: 10px 105px;
+  }
+}
+.number{
+  font-size: 4.5rem;
+  color: $main-color;
+  font-weight: 800;
+  &__benefit{
+    font-size: 1.125rem;
+    color: $text-color;
+    margin: 10px 0 50px 0;
+  }
+}
+.number2{
+  color: $text-color;
+}
