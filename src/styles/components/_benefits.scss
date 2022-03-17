@@ -79,8 +79,12 @@
   @include desktop {
     position: absolute;
     top: -20px;
+    left: 20%;
+  }
+  @include bigdesktop {
+    position: absolute;
+    top: -20px;
     left: calc(40% - 10px);
-
   }
   &__benefit{
     text-align: center;
@@ -113,4 +117,17 @@
 }
 .number2{
   color: $text-color;
+}
+
+.pulse{
+  animation: pulse 1s infinite alternate;
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
 }

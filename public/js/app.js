@@ -1,6 +1,7 @@
 const hamburger = document.querySelector("#hamburger");
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menu__item");
+const number = document.querySelectorAll(".number");
 
 const showMenu = () =>{
     menu.classList.toggle("menu__mobile");
@@ -18,4 +19,15 @@ const showMenu = () =>{
     }
 }
 
+
 hamburger.addEventListener("click", showMenu);
+number.forEach(el => {
+    el.addEventListener("mouseover", e =>{
+        el.classList.add("pulse")
+    })
+})
+number.forEach(el => {
+    el.addEventListener("mouseout", e =>{
+        el.classList.remove("pulse")
+    })
+})

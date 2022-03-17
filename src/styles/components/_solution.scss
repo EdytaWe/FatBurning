@@ -1,14 +1,17 @@
 .plate{
-  display: none;
-  @include tablet {
-    display: block;
-    background-image: url("../assets/plate.jpg");
-    width: 400px;
-    background-size: cover;
-    background-position: left;
-  }
+  background-image: url("../assets/plate.jpg");
+  width: 148px;
+  height: 100%;
+  background-size: cover;
+  background-position: left;
   &__2{
     background-position: right;
+  }
+  &__container{
+    display: none;
+    @include tablet{
+      display: inline-block;
+    }
   }
 }
 .solution{
@@ -25,10 +28,15 @@
     text-align: center;
     @include tablet {
       font-size: 1.25rem;
+      padding: 35px;
     }
     &__content{
       line-height: 1.2rem;
       margin-bottom: 30px;
+      @include tablet {
+        line-height: 2.25rem;
+      }
+
     }
     &__color{
       font-weight: 700;
