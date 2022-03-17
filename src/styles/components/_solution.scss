@@ -1,0 +1,45 @@
+.plate{
+  display: none;
+  @include tablet {
+    display: block;
+    background-image: url("../assets/plate.jpg");
+    width: 400px;
+    background-size: cover;
+    background-position: left;
+  }
+  &__2{
+    background-position: right;
+  }
+}
+.solution{
+  display: flex;
+  justify-content: space-between;
+  background-color: $secondary-color;
+  @include bigdesktop{
+    margin-top: 36px;
+  }
+  &__description{
+    margin: 25px 17px 0 17px;
+    font-size: 0.875rem;
+    color: $text-color;
+    text-align: center;
+    @include tablet {
+      font-size: 1.25rem;
+    }
+    &__content{
+      line-height: 1.2rem;
+      margin-bottom: 30px;
+    }
+    &__color{
+      font-weight: 700;
+      color: $main-color;
+      line-height: 1.2rem;
+    }
+  }
+}
+.logo__text{
+  font-size: 0.875rem;
+  @include tablet {
+    font-size: 1.25rem;
+  }
+}
