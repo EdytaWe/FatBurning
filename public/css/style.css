@@ -668,12 +668,12 @@ body {
   }
 }
 
-.fa-solid {
+.fa-circle-check {
   font-size: 2rem;
   color: #0898EC;
 }
 @media screen and (min-width: 770px) {
-  .fa-solid {
+  .fa-circle-check {
     font-size: 3rem;
   }
 }
@@ -686,6 +686,7 @@ body {
     margin: 0 auto;
     display: flex;
     margin-top: 160px;
+    margin-bottom: 125px;
   }
 }
 .join__description {
@@ -752,6 +753,52 @@ body {
     height: 116px;
     background-color: #021424;
     margin: 50px 0;
+  }
+}
+
+.contact {
+  background-image: url("../assets/woman2.jpg");
+  background-position: left top;
+  background-size: cover;
+  text-align: center;
+  padding: 114px 50px 114px 0;
+}
+@media screen and (min-width: 770px) {
+  .contact {
+    background-position: left;
+  }
+}
+.contact__description {
+  color: #021424;
+}
+@media screen and (min-width: 770px) {
+  .contact__description {
+    max-width: 426px;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .contact__description {
+    margin: 0 auto;
+    margin-left: 92px;
+  }
+}
+.contact__mail {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 50px 0;
+}
+@media screen and (min-width: 770px) {
+  .contact__mail {
+    max-width: 426px;
+    margin: 50px 0 50px 20px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .contact__mail {
+    margin: 0 auto;
+    margin: 50px 0 50px 92px;
   }
 }
 /*# sourceMappingURL=style.css.map */

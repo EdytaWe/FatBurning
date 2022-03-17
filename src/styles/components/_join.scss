@@ -3,6 +3,7 @@
   @include desktop{
     display: flex;
     margin-top: 160px;
+    margin-bottom: 125px;
   }
   &__description{
     background-color: $text-color;

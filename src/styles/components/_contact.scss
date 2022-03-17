@@ -1,0 +1,33 @@
+.contact{
+  background-image: url("../assets/woman2.jpg");
+  background-position: left top;
+  background-size: cover;
+  text-align: center;
+  padding: 114px 50px 114px 0;
+  @include tablet{
+    background-position: left;
+  }
+  &__description{
+    color: $text-color;
+    @include tablet{
+      max-width: 426px;
+      margin-left: 20px;
+    }
+    @include bigdesktop{
+      margin-left: 92px;
+    }
+  }
+  &__mail{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 50px 0;
+    @include tablet{
+      max-width: 426px;
+      margin: 50px 0 50px 20px;
+    }
+    @include bigdesktop{
+      margin: 50px 0 50px 92px;
+    }
+  }
+}
