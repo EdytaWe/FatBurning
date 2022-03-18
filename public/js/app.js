@@ -2,6 +2,7 @@ const hamburger = document.querySelector("#hamburger");
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menu__item");
 const number = document.querySelectorAll(".number");
+const button = document.querySelector("#button");
 
 const showMenu = () =>{
     menu.classList.toggle("menu__mobile");
@@ -18,9 +19,20 @@ const showMenu = () =>{
         hamburger.style.transform = "translatex(0px)";
     }
 }
+const addElement =() =>{
+    const text = document.createElement('p');
+    text.textContent = "już dziś!";
+    button.appendChild(text);
+}
+
+const changeColor =() =>{
+    const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    button.style.backgroundColor = randomColor;
+}
 
 
 hamburger.addEventListener("click", showMenu);
+
 number.forEach(el => {
     el.addEventListener("mouseover", e =>{
         el.classList.add("pulse")
@@ -31,3 +43,6 @@ number.forEach(el => {
         el.classList.remove("pulse")
     })
 })
+
+button.addEventListener("mousemove", changeColor);
+addElement();
