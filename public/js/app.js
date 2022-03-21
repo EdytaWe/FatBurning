@@ -19,11 +19,7 @@ const showMenu = () =>{
         hamburger.style.transform = "translatex(0px)";
     }
 }
-const addElement =() =>{
-    const text = document.createElement('p');
-    text.textContent = "już dziś!";
-    button.appendChild(text);
-}
+
 
 const changeColor =() =>{
     const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
@@ -45,4 +41,3 @@ number.forEach(el => {
 })
 
 button.addEventListener("mousemove", changeColor);
-addElement();
